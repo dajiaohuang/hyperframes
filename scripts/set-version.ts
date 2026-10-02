@@ -265,7 +265,6 @@ export function missingChangelogArtifacts(version: string) {
 }
 
 export function changelogArtifacts(version: string) {
-  // Git paths are always slash-separated, including when release tooling runs on Windows.
   return [posix.join("releases", `v${version}.md`), `docs/changelog.mdx#HyperFrames v${version}`];
 }
 
